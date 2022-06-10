@@ -91,19 +91,25 @@ while True:
         newChar = hobbit(isim1,sınıf1,cinsiyet1,yas1)
     elif irk1 == "balrog":
         newChar = balrog(isim1,sınıf1,cinsiyet1,yas1)
-        print("Doğaları gereği Barloglar ve Büyücüler değişimle yeni güçler kazanabilir")
+        print("Doğaları gereği Balroglar ve Büyücüler değişimle yeni güçler kazanabilir")
         print("Eklemek istediğiniz gücü yazabilirsiniz ya da güç vermeden devam etmek için ok yazabilirsiniz\n")
         guc1 = input()
-        newChar.SelfGucEkle(guc1)
-        newChar.SelfGuc
+        if guc1 == "ok":
+            print("Güç eklemeden devam ediliyor\n")
+        else:
+            newChar.SelfGucEkle(guc1)
+            newChar.SelfGuc()
             
     elif irk1 == "büyücü":
         newChar = büyücü(isim1,sınıf1,cinsiyet1,yas1)
-        print("Doğaları gereği Barloglar ve Büyücüler değişimle yeni güçler kazanabilir")
+        print("Doğaları gereği Balroglar ve Büyücüler değişimle yeni güçler kazanabilir")
         print("Eklemek istediğiniz gücü yazabilirsiniz ya da güç vermeden devam etmek için ok yazabilirsiniz\n")
         guc1 = input()
-        newChar.SelfGucEkle(guc1)
-        newChar.SelfGuc
+        if guc1 == "ok":
+            print("Güç eklemeden devam ediliyor\n")
+        else:
+            newChar.SelfGucEkle(guc1)
+            newChar.SelfGuc()
         
     elif irk1 == "ork":
         newChar = ork(isim1,sınıf1,cinsiyet1,yas1)
@@ -122,3 +128,4 @@ while True:
     ans = input("Cevap:")
     if ans == "n":
         break
+
